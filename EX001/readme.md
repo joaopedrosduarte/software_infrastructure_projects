@@ -19,15 +19,11 @@ Some of the requirements to run and compile this process on your machine :
 Talking more about running and compiling this code on your machine, you have the option of compiling in Terminal 
 
     ```bash
-
         ~$ gcc "Nome do arquivo".c -o "Nome do execultavel"
-
     ```
 
 And after the compilation you just have to run the executable that was created by compiling
 
     ```bash
-
         ~$ ./"Nome do execultavel"
-
     ```
