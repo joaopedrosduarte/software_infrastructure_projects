@@ -21,7 +21,7 @@ Talking more about running and compiling this code on your machine, you have the
 
 ```bash
 
-~$ gcc "Nome do arquivo".c -o "Nome do execultavel"
+~$ gcc "FILE NAME".c -o "EXECUTABLE NAME"
 
 ```
 
@@ -29,7 +29,7 @@ And after the compilation you just have to run the executable that was created b
 
 ```bash
 
-~$ ./"Nome do execultavel"
+~$ ./"EXECUTABLE NAME"
 
 ```
 
@@ -39,19 +39,19 @@ Other way of compiling and running the code in your machine is using the Makefil
 For compiling :
 ```bash
 
-make         " gcc 'NOME DO ARQUIVO'.c -o 'NOME DO EXECUTAVEL'" 
+make         " gcc 'FILE NAME'.c -o 'EXECUTABLE NAME'" 
 
 ```
 For run the executable
 ```bash
 
-make run     "./'NOME DO EXECUTAVEL'"
+make run     "./'EXECUTABLE NAME'"
 
 ```
 For remove the executable from the directory
 ```bash
 
-make clean   "rm 'NOME DO EXECUTAVEL'"
+make clean   "rm 'EXECUTABLE NAME'"
 
 ```
 And thats it`s :wink: any questions send me a msg on slack!!
