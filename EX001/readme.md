@@ -36,21 +36,21 @@ And after the compilation you just have to run the executable that was created b
 Other way of compiling and running the code in your machine is using the Makefile <br>
 (Which currently provides an option to compile, run the executable, and delete the executable to not take up space)
 
-    For compiling :
+For compiling :
 ```bash
 
-make
+make         " gcc 'NOME DO ARQUIVO'.c -o 'NOME DO EXECUTAVEL'" 
 
 ```
-    For run the executable
+For run the executable
 ```bash
 
-make run
+make run     "./'NOME DO EXECUTAVEL'"
 
 ```
-    For remove the executable from the directory
+For remove the executable from the directory
 ```bash
 
-make clean
+make clean   "rm 'NOME DO EXECUTAVEL'"
 
 ```
