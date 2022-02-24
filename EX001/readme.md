@@ -35,3 +35,22 @@ And after the compilation you just have to run the executable that was created b
 
 Other way of compiling and running the code in your machine is using the Makefile <br>
 (Which currently provides an option to compile, run the executable, and delete the executable to not take up space)
+
+    For compiling :
+```bash
+
+make
+
+```
+    For run the executable
+```bash
+
+make run
+
+```
+    For remove the executable from the directory
+```bash
+
+make clean
+
+```
