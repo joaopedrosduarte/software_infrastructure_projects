@@ -54,3 +54,4 @@ For remove the executable from the directory
 make clean   "rm 'NOME DO EXECUTAVEL'"
 
 ```
+And thats it`s :wink: any questions send me a msg on slack!!
