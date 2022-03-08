@@ -1,20 +1,26 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <string.h>
 #include <unistd.h>
 #include <sys/types.h>
+#include <stdlib.h>
 
-int main (){
+int main() {
     pid_t pid;
+    int pipeFileDescriptor[2];
+    int menssageInt = 9;
+    int readMenssageInt;
+    int returnPipe = pipe(pipeFileDescriptor);
+    if (returnPipe == -1){
+        printf("Erro to create pipe");
+        return 1;
+    }
+    printf("Writing message Int on father process : \"%d\"\n", menssageInt);
+    write(pipeFileDescriptor[0], &menssageInt,sizeof(int)*1);
     pid = fork();
-
     if (pid == 0){
-        exit(0);
-    } else {
-        printf("Pid of zombie process is : %d \n", pid);
+        read(pipeFileDescriptor[1], &readMenssageInt,sizeof(int)*1);
+        printf("Write menssage Int on child process : \"%d\"\n", menssageInt);
+        return 1;
     }
-    
-    while (1){
-        sleep(11);
-        return(0);
-    }
+    return 0;
 }
